@@ -16,5 +16,3 @@ INSERT INTO usuarios (nombre, apellidos, email, `password`, direccion, id_tipo_u
 	VALUES ('Andrés Manuel', 'López Obrador', 'AMLO_4T@gmail.com', 'Code_Titans123', 'Palacio Nacional CDMX', 2);
 INSERT INTO usuarios (nombre, apellidos, email, `password`, direccion, id_tipo_usuario)
 	VALUES ('Isaac', 'Newton', 'fisicomuerto@gmail.com', 'Code_Titans123', 'Woolsthorpe Manor Hous', 2);
-
-    
