@@ -2,7 +2,7 @@ package com.kaffi.ecommerce.entity;
 import java.math.BigDecimal;
 import jakarta.persistence.*;
 import lombok.*;
-
+import java.sql.Timestamp;
 @AllArgsConstructor
 @Setter
 @Getter
@@ -15,16 +15,12 @@ public class Order {
 	@GeneratedValue( strategy=GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name="precio", nullable=false)	
+	@Column(name="monto_total", nullable=true)	
 	private BigDecimal price;
 	
-	@Column(name="description", nullable=false, length=120)
-	private String description;
+	@Column(name="fecha_orden",nullable=false)
+	private Timestamp date;
 	
-	@Column(name="img_url", nullable=false, length=120)	
-	private String image;
-	
-	@Column(name="id_category", nullable=false)
-	private Long id_category;
-	
+	@Column(name="id_usuario", nullable=false)
+	private Long userId;
 }

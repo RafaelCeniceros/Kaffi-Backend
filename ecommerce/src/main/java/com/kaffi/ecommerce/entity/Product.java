@@ -1,5 +1,35 @@
 package com.kaffi.ecommerce.entity;
 
-public class Product {
+import java.math.BigDecimal;
+import jakarta.persistence.*;
+import lombok.*;
 
+
+@AllArgsConstructor
+@Setter
+@Getter
+@ToString
+@Entity
+@Table(name="productos")
+public class Product {
+	@Id // Indica que el atributo será la clave primaria de la entidad
+	// Indica como se generarán automáticamente las claves primarias
+	@GeneratedValue( strategy=GenerationType.IDENTITY)
+	private Long id;
+	
+	@Column(name="nombre", nullable=false, length=45)
+	private String name;
+	
+	@Column(name="precio", nullable=false)	
+	private BigDecimal price;
+	
+	@Column(name="description", nullable=false, length=120)
+	private String description;
+	
+	@Column(name="img_url", nullable=false, length=120)	
+	private String image;
+	
+	@Column(name="id_category", nullable=false)
+	private Long categoryId;
 }
+
