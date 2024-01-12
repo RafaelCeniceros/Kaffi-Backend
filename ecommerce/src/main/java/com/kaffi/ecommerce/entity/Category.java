@@ -10,7 +10,7 @@ import lombok.*;
 @ToString
 @Entity
 @Table(name="categorias")
-public class Categories {
+public class Category {
 	
 	@Id // Indica que el atributo será la clave primaria de la entidad
 	// Indica como se generarán automáticamente las claves primarias
