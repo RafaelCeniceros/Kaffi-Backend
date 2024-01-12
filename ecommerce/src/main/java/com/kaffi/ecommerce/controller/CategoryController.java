@@ -26,7 +26,7 @@ public class CategoryController {
 	@GetMapping("{id}")
 	Category getCategoryById(@PathVariable("id") Long id) {
 		log.info("Se solicita los datos del id:" + id);
-		Category category = categoryService.getCategoryById(id)
+		Category category = categoryService.getCategoryById(id);
 		return category;
 	}
 	
