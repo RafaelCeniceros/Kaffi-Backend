@@ -11,7 +11,7 @@ import lombok.*;
 @Entity
 @Table(name="usuarios")
 public class User {
-	
+	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@Column(name="nombre",nullable = false,length = 25)

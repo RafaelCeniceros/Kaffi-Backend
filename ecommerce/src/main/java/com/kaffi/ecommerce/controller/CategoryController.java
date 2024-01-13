@@ -12,7 +12,7 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 @CrossOrigin(origins="*")
 @RestController
-@RequestMapping("api/v1/users")
+@RequestMapping("api/v1/categories")
 public class CategoryController {
 	@Autowired
 	CategoryService categoryService;
