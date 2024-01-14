@@ -12,6 +12,7 @@ import lombok.*;
 @Table(name="tipos_usuarios")
 public class UserType {
 	
+	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idUserType;
 	@Column(name="nombre_tipo",nullable = false,length = 25)

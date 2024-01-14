@@ -3,6 +3,7 @@ import java.math.BigDecimal;
 import jakarta.persistence.*;
 import lombok.*;
 import java.sql.Timestamp;
+
 @AllArgsConstructor
 @Setter
 @Getter
@@ -21,6 +22,7 @@ public class Order {
 	@Column(name="fecha_orden",nullable=false)
 	private Timestamp date;
 	
-	@Column(name="id_usuario", nullable=false)
-	private Long userId;
+	@ManyToOne
+	@JoinColumn(name="id_usuario", nullable=false)
+	private User user;
 }
