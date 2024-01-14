@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import com.kaffi.ecommerce.entity.Category;
 import com.kaffi.ecommerce.repository.CategoryRepository;
-import com.kaffi.ecommerce.repository.UserRepository;
 import com.kaffi.ecommerce.service.CategoryService;
 
 @Service

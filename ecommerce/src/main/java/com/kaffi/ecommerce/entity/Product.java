@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import jakarta.persistence.*;
 import lombok.*;
 
-
+@NoArgsConstructor
 @AllArgsConstructor
 @Setter
 @Getter
@@ -23,13 +23,13 @@ public class Product {
 	@Column(name="precio", nullable=false)	
 	private BigDecimal price;
 	
-	@Column(name="description", nullable=false, length=120)
+	@Column(name="descripcion", nullable=false, length=120)
 	private String description;
 	
 	@Column(name="img_url", nullable=false, length=120)	
 	private String image;
 	
-	@Column(name="id_category", nullable=false)
+	@Column(name="id_categoria", nullable=false)
 	private Long categoryId;
 }
 
