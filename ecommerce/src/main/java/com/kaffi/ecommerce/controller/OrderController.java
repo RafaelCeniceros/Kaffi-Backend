@@ -62,15 +62,8 @@ public class OrderController {
 	
 	@DeleteMapping("{id}")
 	String deleteOrder(@PathVariable("id") Long id) {
-		Order existingOrder = orderService.getOrderById(id);
-		if(existingOrder.getId()!= null) {
-			orderService.deleteOrder(id);
-			return "Se elimino la orden id :" + id;
-		}
-		else {
-			return "la orden id :" + id + " no existe";
-		}
-
+		orderService.deleteOrder(id);
+		return "Se elimino la orden id :" + id;
 	}
 	
 }

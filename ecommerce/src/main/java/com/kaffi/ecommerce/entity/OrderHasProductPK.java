@@ -7,7 +7,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
-public class OrderhasProductPK implements Serializable {
+public class OrderHasProductPK implements Serializable {
 
     private static final long serialVersionUID = 1L; // Puedes elegir cualquier valor que desees
 

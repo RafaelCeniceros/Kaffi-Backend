@@ -5,14 +5,15 @@ import java.math.BigDecimal;
 import jakarta.persistence.*;
 import lombok.*;
 
+@NoArgsConstructor
 @AllArgsConstructor
 @Setter
 @Getter
 @ToString
 @Entity
 @Table(name = "ordenes_has_productos")
-@IdClass(OrderhasProductPK.class)
-public class OrderhasProduct {
+@IdClass(OrderHasProductPK.class)
+public class OrderHasProduct {
 
     @Id
     @ManyToOne

@@ -50,6 +50,7 @@ public class OrderServiceImpl implements OrderService {
 	@Override
 	public void deleteOrder(Long id) {
 		Order existingOrder = getOrderById(id);
+		if(existingOrder.getId() != null)
 		orderRepository.delete(existingOrder);
 	}
 
