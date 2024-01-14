@@ -1,7 +1,6 @@
 package com.kaffi.ecommerce.service;
 
 import java.util.List;
-
 import com.kaffi.ecommerce.entity.Category;
 
 public interface CategoryService {

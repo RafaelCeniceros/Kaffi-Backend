@@ -11,7 +11,6 @@ import lombok.*;
 @Entity
 @Table(name="tipos_usuarios")
 public class UserType {
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idUserType;
