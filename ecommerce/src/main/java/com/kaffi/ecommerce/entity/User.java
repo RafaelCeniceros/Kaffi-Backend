@@ -30,7 +30,7 @@ public class User {
 	private String address;
 	
 	@ManyToOne
-	@JoinColumn(name="id_tipo_uruario", nullable=false)
+	@JoinColumn(name="id_tipo_usuario", nullable=false)
 	private UserType userType;
 
 }
