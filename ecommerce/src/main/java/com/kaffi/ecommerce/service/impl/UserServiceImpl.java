@@ -59,7 +59,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public User updateUser(User user, Long id) {
 		User existingUser = getUserById(id); //Verifica que el id exista
-		existingUser.setFirtName(user.getFirtName());
+		existingUser.setFirstName(user.getFirstName());
 		existingUser.setLastName(user.getLastName());
 		existingUser.setPassword(user.getPassword());
 		existingUser.setAddress(user.getAddress());

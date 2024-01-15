@@ -3,7 +3,6 @@ package com.kaffi.ecommerce.service;
 import java.util.List;
 
 import com.kaffi.ecommerce.entity.Comment;
-import com.kaffi.ecommerce.entity.Order;
 import com.kaffi.ecommerce.entity.User;
 
 public interface CommentService {

@@ -19,7 +19,7 @@ public class User {
 	@Column(name="activo")
 	private boolean active;
 	@Column(name="nombre",nullable = false,length = 25)
-	private String firtName;
+	private String firstName;
 	@Column(name="apellidos",nullable = false,length = 25)
 	private String lastName;
 	@Column(name="email",nullable = false,length = 30,unique = true)
