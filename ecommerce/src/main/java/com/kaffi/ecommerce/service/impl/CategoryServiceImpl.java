@@ -33,7 +33,6 @@ public class CategoryServiceImpl implements CategoryService {
 	@Override
 	public Category createCategory(Category category) {
 		category.setId(null);
-		// TODO Verificar que no exista el email.
 		Category newCategory = categoryRepository.save( category );
 		return newCategory;
 	}
