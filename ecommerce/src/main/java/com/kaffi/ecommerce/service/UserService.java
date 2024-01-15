@@ -9,7 +9,7 @@ public interface UserService {
 	User getUserByEmail(String email);
 	User createUser(User user);
 	List<User> getAllUsers();
-	User updateUser(User user,Long id);
-	void deteleUser(Long id);
+	User updateUser(User user, Long id);
+	void deleteUser(Long id);
 
 }

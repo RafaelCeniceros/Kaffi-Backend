@@ -11,8 +11,10 @@ import lombok.*;
 @Entity
 @Table(name="tipos_usuarios")
 public class UserType {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column (name="id_tipo_usuario")
 	private Long idUserType;
 	@Column(name="nombre_tipo",nullable = false,length = 25)
 	private String typeName;

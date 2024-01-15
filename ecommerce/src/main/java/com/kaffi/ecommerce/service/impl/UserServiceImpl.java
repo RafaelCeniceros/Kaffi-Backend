@@ -15,7 +15,6 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	UserRepository userRepository;
 
-	
 	@Override
 	public User getUserById(Long id) {
 		Optional<User> userOptional = userRepository.findById(id);
@@ -36,6 +35,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public User createUser(User user) {
 	    user.setId(null);
+	    user.setActive(true);
 
 	    // Verificar que no exista el email antes de guardar el usuario
 	    Optional<User> existingUser = userRepository.findByEmail(user.getEmail());
@@ -43,7 +43,7 @@ public class UserServiceImpl implements UserService {
 	        throw new IllegalArgumentException("El correo electrónico ya está registrado");
 	    }
 	    
-	    // Si el correo electrónico no existe, procedemos a guardar el nuevo usuario
+	    // Si el correo electrónico no existe, guardar el nuevo usuario
 	    User newUser = userRepository.save(user);
 	    return newUser;
 	}
@@ -51,7 +51,7 @@ public class UserServiceImpl implements UserService {
 	
 	@Override
 	public List<User> getAllUsers() {
-		List<User> users = (List<User>) userRepository.findAll();
+		List<User> users = (List<User>) userRepository.findAllByActive(true);
 		return users;
 	}
 
@@ -63,7 +63,7 @@ public class UserServiceImpl implements UserService {
 		existingUser.setLastName(user.getLastName());
 		existingUser.setPassword(user.getPassword());
 		existingUser.setAddress(user.getAddress());
-		existingUser.setIdUserType(user.getIdUserType());
+		existingUser.setUserType(user.getUserType());
 		
 		// Verifica si el correo electrónico ha sido modificado
 	    if (!existingUser.getEmail().equals(user.getEmail())) {
@@ -79,11 +79,11 @@ public class UserServiceImpl implements UserService {
 	    return userRepository.save(existingUser);
 	}
 
-	
 	@Override
-	public void deteleUser(Long id) {
+	public void deleteUser(Long id) {
 		User existingUser = getUserById(id);
-		userRepository.delete(existingUser);
+		existingUser.setActive(false);
+		userRepository.save(existingUser);
 	}
 
 }
