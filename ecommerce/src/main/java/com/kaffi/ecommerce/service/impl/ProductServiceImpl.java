@@ -31,7 +31,18 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public Product createProduct(Product product) {
-		return productRepository.save(product);
+		product.setId(null);
+		product.setActive(true);
+		
+		// Verificar que no exista el nombre del producto antes de guardar el usuario
+		Optional<Product> existingProduct = productRepository.findByName(product.getName());
+	    if (existingProduct.isPresent()) {
+	        throw new IllegalArgumentException("El producto ya está registrado");
+	    }
+	    
+	    // Si el producto no existe, guardar el nuevo producto
+	    Product newProduct = productRepository.save(product);
+	    return newProduct;
 	}
 
 	@Override
@@ -42,17 +53,31 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public Product updateProduct(Product product, Long id) {
 		Product existingProduct = getProductById(id);
-		existingProduct.setName( product.getName() );
 		existingProduct.setPrice( product.getPrice() );
 		existingProduct.setDescription( product.getDescription() );
 		existingProduct.setImage( product.getImage() );
 		existingProduct.setCategory( product.getCategory() );
-		return productRepository.save(existingProduct);
+	
+		// Verifica si el nombre ha sido modificado
+	    if (!existingProduct.getName().equals(product.getName())) {
+	        Optional<Product> existingProductWithName = productRepository.findByName(product.getName());
+	        if (existingProductWithName.isPresent()) {
+	            throw new IllegalArgumentException("El nuevo producto ya está registrado");
+	        }
+	        // Si el nombre no está duplicado, actualiza el nombre del producto
+	        existingProduct.setName(product.getName());
+	    }
+	    
+	    // Guarda el usuario actualizado en la base de datos
+	    return productRepository.save(existingProduct);
 	}
 
 	@Override
 	public void deleteProduct(Long id) {
-		// TODO Auto-generated method stub
+		Product existingProduct = getProductById(id);
+		existingProduct.setActive(false);
+		productRepository.save(existingProduct);
+		
 		
 	}
 }

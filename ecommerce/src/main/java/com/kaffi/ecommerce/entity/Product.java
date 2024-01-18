@@ -31,6 +31,9 @@ public class Product {
 	
 	@Column(name="img_url", nullable=false, length=120)	
 	private String image;
+	
+	@Column(name="activo")
+	private boolean active;
 
 	@ManyToOne
 	@JoinColumn(name="id_categoria", nullable=false)
