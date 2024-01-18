@@ -1,6 +1,9 @@
 package com.kaffi.ecommerce.entity;
 
 import java.math.BigDecimal;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -31,6 +34,7 @@ public class Product {
 
 	@ManyToOne
 	@JoinColumn(name="id_categoria", nullable=false)
+	@JsonIgnoreProperties({"name","description"})
 	private Category category;
 }
 

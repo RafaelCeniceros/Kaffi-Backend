@@ -3,11 +3,11 @@
 select * from categorias;
 
 INSERT INTO categorias (nombre, descripcion)
-	VALUES ('Café', 'Variedades de café caliente');
+	VALUES ('Cafes', 'Variedades de café caliente');
 INSERT INTO categorias (nombre, descripcion)
 	 VALUES ('Bebidas', 'Refrescos y bebidas frías');
 INSERT INTO categorias (nombre, descripcion)
-	VALUES ('Frappés', 'Bebidas frías y espumosas');
+	VALUES ('Frappes', 'Bebidas frías y espumosas');
 INSERT INTO categorias (nombre, descripcion)
 	VALUES ('Especialidades', 'Productos especiales del chef');
 INSERT INTO categorias (nombre, descripcion)
