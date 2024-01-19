@@ -1,7 +1,6 @@
-
 FROM azul/zulu-openjdk:17-latest
 
-COPY build/libs/ecommerce-0.0.1-SNAPSHOT app.jar
+COPY ecommerce/build/libs/ecommerce-0.0.1-SNAPSHOT.jar app.jar
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
