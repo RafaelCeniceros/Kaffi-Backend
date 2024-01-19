@@ -20,7 +20,7 @@ public class Comment {
 	@Column(name="fecha",nullable=false)
 	private Timestamp date;
 	
-	@Column(name="comentario",nullable = false,length = 120 )
+	@Column(name="comentario",nullable = false,length = 200 )
 	private String comment;
 	
 	@ManyToOne

@@ -18,15 +18,15 @@ public class User {
 	private Long id;
 	@Column(name="activo")
 	private boolean active;
-	@Column(name="nombre",nullable = false,length = 25)
+	@Column(name="nombre",nullable = false,length = 50)
 	private String firstName;
-	@Column(name="apellidos",nullable = false,length = 25)
+	@Column(name="apellidos",nullable = false,length = 50)
 	private String lastName;
-	@Column(name="email",nullable = false,length = 30,unique = true)
+	@Column(name="email",nullable = false,length = 50,unique = true)
 	private String email;
 	@Column(name="password",nullable = false,length = 45 )
 	private String password;
-	@Column(name="direccion",length = 45 )
+	@Column(name="direccion",length = 250 )
 	private String address;
 	
 	@ManyToOne

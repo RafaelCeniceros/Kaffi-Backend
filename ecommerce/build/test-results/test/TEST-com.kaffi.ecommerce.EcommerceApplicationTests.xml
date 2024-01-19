@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kaffi.ecommerce.EcommerceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-18T23:44:10" hostname="FONSECA" time="1.751">
+<testsuite name="com.kaffi.ecommerce.EcommerceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-19T02:48:49" hostname="FONSECA" time="1.952">
   <properties/>
-  <testcase name="contextLoads()" classname="com.kaffi.ecommerce.EcommerceApplicationTests" time="1.751"/>
-  <system-out><![CDATA[17:43:55.229 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.kaffi.ecommerce.EcommerceApplicationTests]: EcommerceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-17:43:55.471 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.kaffi.ecommerce.EcommerceApplication for test class com.kaffi.ecommerce.EcommerceApplicationTests
+  <testcase name="contextLoads()" classname="com.kaffi.ecommerce.EcommerceApplicationTests" time="1.952"/>
+  <system-out><![CDATA[20:48:37.859 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.kaffi.ecommerce.EcommerceApplicationTests]: EcommerceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:48:38.120 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.kaffi.ecommerce.EcommerceApplication for test class com.kaffi.ecommerce.EcommerceApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -13,48 +13,48 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.1)
 
-2024-01-18T17:43:56.615-06:00  INFO 17292 --- [    Test worker] c.k.ecommerce.EcommerceApplicationTests  : Starting EcommerceApplicationTests using Java 17.0.9 with PID 17292 (started by soyos in C:\generation\ch34\Proyecto_Kaffi_Backend\Kaffi-Backend\ecommerce)
-2024-01-18T17:43:56.618-06:00  INFO 17292 --- [    Test worker] c.k.ecommerce.EcommerceApplicationTests  : The following 1 profile is active: "${PROFILE}"
-2024-01-18T17:43:58.270-06:00  INFO 17292 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-01-18T17:43:59.062-06:00  INFO 17292 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 698 ms. Found 7 JPA repository interfaces.
-2024-01-18T17:44:00.224-06:00  INFO 17292 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-01-18T17:44:01.533-06:00  INFO 17292 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:1d68f4b1-e5e1-47c3-8fe0-2bf0932d6456 user=SA
-2024-01-18T17:44:01.561-06:00  INFO 17292 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-01-18T17:44:01.902-06:00  INFO 17292 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-01-18T17:44:02.182-06:00  INFO 17292 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-01-18T17:44:02.357-06:00  INFO 17292 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-01-18T17:44:03.074-06:00  INFO 17292 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-01-18T17:44:07.893-06:00  INFO 17292 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-01-18T17:44:07.925-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:39.536-06:00  INFO 596 --- [    Test worker] c.k.ecommerce.EcommerceApplicationTests  : Starting EcommerceApplicationTests using Java 17.0.9 with PID 596 (started by soyos in C:\generation\ch34\Proyecto_Kaffi_Backend\Kaffi-Backend\ecommerce)
+2024-01-18T20:48:39.538-06:00  INFO 596 --- [    Test worker] c.k.ecommerce.EcommerceApplicationTests  : The following 1 profile is active: "${PROFILE}"
+2024-01-18T20:48:41.990-06:00  INFO 596 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-18T20:48:42.432-06:00  INFO 596 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 393 ms. Found 7 JPA repository interfaces.
+2024-01-18T20:48:43.786-06:00  INFO 596 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-18T20:48:44.266-06:00  INFO 596 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:506e031a-70ab-4ab7-be1d-969d4031dcd6 user=SA
+2024-01-18T20:48:44.272-06:00  INFO 596 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-18T20:48:44.377-06:00  INFO 596 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-18T20:48:44.580-06:00  INFO 596 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-18T20:48:44.684-06:00  INFO 596 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-18T20:48:45.342-06:00  INFO 596 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-18T20:48:47.681-06:00  INFO 596 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-18T20:48:47.716-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists categorias cascade 
-2024-01-18T17:44:07.932-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.721-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists comentarios cascade 
-2024-01-18T17:44:07.932-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.723-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists ordenes cascade 
-2024-01-18T17:44:07.934-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.724-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists ordenes_has_productos cascade 
-2024-01-18T17:44:07.935-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.725-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists productos cascade 
-2024-01-18T17:44:07.936-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.726-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists tipos_usuarios cascade 
-2024-01-18T17:44:07.936-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.727-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     drop table if exists usuarios cascade 
-2024-01-18T17:44:07.945-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.737-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     create table categorias (
         id bigint generated by default as identity,
         nombre varchar(25) not null,
         descripcion varchar(45) not null,
         primary key (id)
     )
-2024-01-18T17:44:07.961-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.750-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     create table comentarios (
         fecha timestamp(6) not null,
         id bigint generated by default as identity,
         id_usuario bigint,
-        comentario varchar(120) not null,
+        comentario varchar(200) not null,
         primary key (id)
     )
-2024-01-18T17:44:07.964-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.756-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     create table ordenes (
         monto_total numeric(38,2),
         fecha_orden timestamp(6) not null,
@@ -62,7 +62,7 @@
         id_usuario bigint not null,
         primary key (id)
     )
-2024-01-18T17:44:07.967-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.758-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     create table ordenes_has_productos (
         cantidad integer not null,
         precio_unitario numeric(38,2) not null,
@@ -71,7 +71,7 @@
         id_producto bigint not null,
         primary key (id_orden, id_producto)
     )
-2024-01-18T17:44:07.971-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.763-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     create table productos (
         activo boolean,
         precio numeric(38,2) not null,
@@ -82,58 +82,58 @@
         img_url varchar(120) not null,
         primary key (id)
     )
-2024-01-18T17:44:07.974-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.772-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     create table tipos_usuarios (
         id_tipo_usuario bigint generated by default as identity,
         nombre_tipo varchar(25) not null,
         descripcion varchar(45) not null,
         primary key (id_tipo_usuario)
     )
-2024-01-18T17:44:07.978-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.782-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     create table usuarios (
         activo boolean,
         id bigint generated by default as identity,
         id_tipo_usuario bigint not null,
-        apellidos varchar(25) not null,
-        nombre varchar(25) not null,
-        email varchar(30) not null unique,
-        direccion varchar(45),
         password varchar(45) not null,
+        apellidos varchar(50) not null,
+        email varchar(50) not null unique,
+        nombre varchar(50) not null,
+        direccion varchar(250),
         primary key (id)
     )
-2024-01-18T17:44:07.988-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.790-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     alter table if exists comentarios 
        add constraint FK1p19mnmrhsp25p79cg1o7oke5 
        foreign key (id_usuario) 
        references usuarios
-2024-01-18T17:44:08.015-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.841-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     alter table if exists ordenes 
        add constraint FKd8lswiv90edntheuacavam69a 
        foreign key (id_usuario) 
        references usuarios
-2024-01-18T17:44:08.020-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.845-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     alter table if exists ordenes_has_productos 
        add constraint FKkmg4xs6oq15eel24ve3jwt47g 
        foreign key (id_orden) 
        references ordenes
-2024-01-18T17:44:08.023-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.848-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     alter table if exists ordenes_has_productos 
        add constraint FK7rh3wsnmbrpxsh4v97a1h9raa 
        foreign key (id_producto) 
        references productos
-2024-01-18T17:44:08.025-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.855-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     alter table if exists productos 
        add constraint FKdtoa37luoxhhvbicrfiu5ygbj 
        foreign key (id_categoria) 
        references categorias
-2024-01-18T17:44:08.028-06:00 DEBUG 17292 --- [    Test worker] org.hibernate.SQL                        : 
+2024-01-18T20:48:47.862-06:00 DEBUG 596 --- [    Test worker] org.hibernate.SQL                        : 
     alter table if exists usuarios 
        add constraint FK9y5cspqai0tmpbvjwgnq8f182 
        foreign key (id_tipo_usuario) 
        references tipos_usuarios
-2024-01-18T17:44:08.038-06:00  INFO 17292 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-01-18T17:44:09.140-06:00  WARN 17292 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-01-18T17:44:10.103-06:00  INFO 17292 --- [    Test worker] c.k.ecommerce.EcommerceApplicationTests  : Started EcommerceApplicationTests in 14.058 seconds (process running for 23.352)
+2024-01-18T20:48:47.873-06:00  INFO 596 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-18T20:48:49.028-06:00  WARN 596 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-18T20:48:49.872-06:00  INFO 596 --- [    Test worker] c.k.ecommerce.EcommerceApplicationTests  : Started EcommerceApplicationTests in 11.115 seconds (process running for 18.59)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
