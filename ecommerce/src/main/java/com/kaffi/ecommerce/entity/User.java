@@ -26,7 +26,7 @@ public class User {
 	private String email;
 	@Column(name="password",nullable = false,length = 45 )
 	private String password;
-	@Column(name="direccion",length = 250 )
+	@Column(name="direccion",length = 250, nullable = true )
 	private String address;
 	
 	@ManyToOne
